@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const ProjectItem = ({ src, title, desc }) => {
+const ProjectItem = ({ src, title, desc }: { src: string, title: string, desc: string }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: false,
