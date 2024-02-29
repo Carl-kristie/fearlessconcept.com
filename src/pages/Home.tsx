@@ -10,12 +10,12 @@ function Home() {
 
   return (
     <section className="home">
-        <Header/>
-        <Hero></Hero>
-        <Services></Services>
-        <Projects></Projects>
-        <Contact></Contact>
-        <Footer></Footer>
+      <Header/>
+      <Hero />
+      <Services />
+      <Projects />
+      <Contact />
+      <Footer />
     </section>
   )
 }   
