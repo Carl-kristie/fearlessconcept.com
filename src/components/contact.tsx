@@ -4,7 +4,7 @@ import hands from "../assets/hands.mp4"
 function Contact() {
   return (
     <>
-    <section className="contact-section" id="contact">
+    <section className="contact-section">
         <div className="contact-head">
             <h1>
             Reach out to transform your ideas to reality, <span className="blue"> Let's make it big!</span>
@@ -13,7 +13,7 @@ function Contact() {
             <source src={hands} type="video/mp4"/>
             </video>
         </div>
-        <div className="contact-form">
+        <div className="contact-form"  id="contact">
             <div className="form-text">
                 <h1>Get in touch</h1>
                 <p>Have a project in mind? Let's discuss</p>

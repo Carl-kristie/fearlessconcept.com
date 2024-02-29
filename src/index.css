@@ -6,11 +6,13 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 *{
     font-family: roboto;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -42,7 +44,7 @@ body{
     height: 20vh;
     display: grid;
     color: white;
-    grid-template-columns: 83% 20%;
+    grid-template-columns: 80% 20%;
     align-items: center;
     margin: 0;
     position: fixed;
@@ -77,6 +79,10 @@ li{
     font-weight: 400;
     margin: 0 1em;
     padding: 0;
+}
+
+a{
+    all: unset;
 }
 
 
@@ -174,7 +180,7 @@ li{
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: black;
+    background-color: #081F3A;
     margin: 0;
     padding: 0;
     position: relative;
@@ -455,3 +461,72 @@ footer{
     z-index: 1;
 }
 
+
+/* Media Queries */
+@media screen and (max-width: 1024px){
+    .menu-btn{
+        width: 7em;
+        height: 2.5em;
+        font-size: 20px;
+    }
+    .hero-text{
+        padding-right: 20%;
+        padding-bottom: 20%;
+    }
+    .hero-text>h1{
+        font-size: 70px;
+    }
+    .hero-text>p{
+        font-size: 30px;
+    }
+    .about-home{
+        grid-template-columns: 100%;
+        gap: 0; 
+        grid-template-rows: 35% 65%;
+    }
+    .services-left{
+        width: 90%;
+        padding-top: 10%;
+        }
+    .services-title{
+        overflow: hidden    ;
+    }
+    
+
+    .services-text{
+        font-size: 25px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .services-right{
+        height: 100%;
+        padding-top: 10%;
+    }
+    .services-left>p{
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .project-item{
+        height: 46vh;
+        grid-template-columns: 100%;
+        margin-bottom: 30%;
+    }
+    .contact-section{
+        height: 120vh;
+    }
+    .contact-head{
+        height: 50vh;
+    }
+    .contact-form{
+        grid-template-columns: 100%;
+        height: 70vh;
+    }
+    form{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 830px){
+.project-item.scale-up {
+    transform: scale(.8);
+}
+}
