@@ -8,7 +8,7 @@ import ProjectItem from "../components/projectItem";
 function Projects() {
   return (
     <>
-      <section className="projects-section">
+      <section className="projects">
         <h1 className="project-title">PROJECTS</h1>
         <div className="projects-container">
           <ProjectItem src={jwilimited} title="JWILIMITED" desc="An Electrical Company Website"/>
