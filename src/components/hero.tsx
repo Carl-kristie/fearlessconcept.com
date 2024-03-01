@@ -1,31 +1,53 @@
 import '../index.css';
-import { TextGenerateEffect } from './textgen';
+import { motion } from 'framer-motion';
 
 function Hero() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: .8,
+      },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+      },
+    },
+  };
+
   return (
     <>
       {/* <div className="hero-overlay"></div> */}
-      <div className='hero'>
+      <motion.div
+        className='hero'
+        variants={containerVariants}
+        initial='hidden'
+        animate='visible'
+      >
         <div className='hero-content'>
-          <div className='hero-text'>
-              <TextGenerateEffect
-                words='Fearless Innovation Hub'
-                className='heroh2'
-                overallDelay={0}
-              />
-              <TextGenerateEffect
-                words='Trendsetting Digital Solutions'
-                className='herospan'
-                overallDelay={10}
-              />
-              <TextGenerateEffect
-                words="We&nbsp;fuse&nbsp;creativity&nbsp;with&nbsp;technology to&nbsp;craft&nbsp;unforgettable&nbsp;digital&nbsp;experiences. From&nbsp;sleek&nbsp;websites&nbsp;to&nbsp;powerful&nbsp;marketing solutions, we're here to elevate your brand in the digital world."
-                className='herop'
-                overallDelay={10}
-              />
-          </div>
+          <motion.div className='hero-text' variants={containerVariants}>
+            <motion.h2 className='heroh2' variants={childVariants}>
+              Fearless Innovation Hub
+            </motion.h2>
+            <motion.span className='herospan' variants={childVariants}>
+              Trendsetting Digital Solutions
+            </motion.span>
+            <motion.p className='herop' variants={childVariants}>
+              We fuse creativity with technology to craft unforgettable digital
+              experiences. From sleek websites to powerful marketing solutions,
+              we're here to elevate your brand in the digital world.
+            </motion.p>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
