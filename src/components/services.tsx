@@ -11,10 +11,15 @@ function Services() {
 <br />
 <br />
 Why Choose Us:
+<br />
 •	Expertise: Professionals with years of expertise in their respective industries make up our team.
+<br />
 •	Customization: We tailor our services to your unique needs and goals.
+<br />
 •	Creativity: We pride ourselves on innovative solutions that set you apart from the competition.
+<br />
 •	Quality Assurance: With every job, our dedication to quality guarantees your pleasure.
+<br />
 •	Timely Delivery: We prioritize meeting deadlines and always deliver on time.
         </p>
       </div>

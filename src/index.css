@@ -407,13 +407,16 @@ a {
   place-items: center;
   padding: 3rem;
   overflow: hidden;
+  
 }
 
 .hands {
   overflow: hidden;
-  margin-top: -22%;
   max-width: 100%;
+  position: absolute;
+  bottom: 0;
 }
+
 
 .contact-head > h2 {
   font-size: 70px;
@@ -551,16 +554,20 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-
+    .project-title{
+        z-index: 99;
+    }
     .services{
         padding: 0;
     }
     .services-title{
-        top: 1.5%;
+        top: 1%;
+        text-align: center;
+        left: 10%;
     }
 
     .services-text{
-        font-size: 20px;
+        font-size: 18px;
     }
     .projectImage {
         width: 100%;
@@ -573,8 +580,6 @@ footer {
         font-size: 16px;
     }
     .hands{
-        transform: scale(.5);
-        margin-top: -40%;
         
     }
     .contact-head > h2 {
